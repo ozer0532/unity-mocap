@@ -1,0 +1,8 @@
+mahotas==1.4.12
+matplotlib==3.4.3
+mediapipe==0.8.7.3
+numpy==1.21.2
+opencv-contrib-python==4.5.5.64
+opencv-python==4.5.5.64
+PySimpleGUI==4.59.0
+pyzmq==22.3.0
