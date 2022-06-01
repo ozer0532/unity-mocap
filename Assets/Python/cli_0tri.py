@@ -3,7 +3,7 @@ import signal
 import zmq
 
 import numpy as np
-from pprint import pprint
+# from pprint import pprint
 
 from config import load_config
 from utils import mp_pose, serialization, undistort
@@ -81,7 +81,7 @@ def main():
 
                 # trig_xyz = keypoints
                 # if trig_xyz is not None:
-                    # pprint(trig_xyz.tolist())
+                #     pprint(trig_xyz.tolist())
 
                 cv2.imshow('Window L', frame_l)
                 cv2.imshow('Window R', frame_r)

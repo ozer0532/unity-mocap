@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763e7c55e40713e4daa7b7ee5bb0211d, type: 3}
   m_Name: Eyes KP
   m_EditorClassIdentifier: 
-  KeypointIndices: 0100000004000000
+  KeypointIndices: 0200000005000000

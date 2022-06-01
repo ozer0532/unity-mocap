@@ -104,7 +104,6 @@ def main():
                 # if trig_xyz is not None:
                 #     pprint(trig_xyz.tolist())
 
-
                 cv2.imshow('Window L', frame_l)
                 cv2.imshow('Window R', frame_r)
                 socket.send(serialization.pack(trig_xyz))

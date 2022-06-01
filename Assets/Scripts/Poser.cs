@@ -93,6 +93,8 @@ public class Poser : MonoBehaviour
                     _poseKeypoints[i, 1] + 1,
                     _poseKeypoints[i, 2]
                 );
+                if (MappingInfo[i].Joint)
+                    position = MappingInfo[i].Joint.position;
                 Gizmos.DrawWireSphere(position, 0.01f);
             }
 
@@ -106,11 +108,15 @@ public class Poser : MonoBehaviour
                     _poseKeypoints[from, 1] + 1,
                     _poseKeypoints[from, 2]
                 );
+                if (MappingInfo[from].Joint)
+                    fromPt = MappingInfo[from].Joint.position;
                 var toPt = new Vector3(
                     _poseKeypoints[to, 0],
                     _poseKeypoints[to, 1] + 1,
                     _poseKeypoints[to, 2]
                 );
+                if (MappingInfo[to].Joint)
+                    toPt = MappingInfo[to].Joint.position;
                 Gizmos.DrawLine(fromPt, toPt);
             }
 
