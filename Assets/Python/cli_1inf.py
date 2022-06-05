@@ -1,3 +1,4 @@
+import argparse
 import cv2
 import signal
 import zmq
@@ -8,6 +9,12 @@ import numpy as np
 from config import load_config
 from utils import mp_pose, serialization, undistort
 
+# Initialize parser
+parser = argparse.ArgumentParser()
+parser.add_argument("-a", "--cam1", help="First Camera", default=0, type=int)
+parser.add_argument("-b", "--cam2", help="Second Camera", default=1, type=int)
+args = parser.parse_args()
+
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 
@@ -16,7 +23,7 @@ def main():
     socket = context.socket(zmq.REP)
     socket.bind("tcp://*:5555")
 
-    cam_id = 1
+    cam_id = args.cam1
 
     K, d = load_config(*[f"K_{cam_id}", f"d_{cam_id}"])
 

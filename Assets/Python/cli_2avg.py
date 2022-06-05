@@ -1,3 +1,4 @@
+import argparse
 import cv2
 import signal
 import zmq
@@ -7,6 +8,12 @@ import numpy as np
 
 from config import load_config
 from utils import epipolar, mp_pose, serialization, undistort
+
+# Initialize parser
+parser = argparse.ArgumentParser()
+parser.add_argument("-a", "--cam1", help="First Camera", default=0, type=int)
+parser.add_argument("-b", "--cam2", help="Second Camera", default=1, type=int)
+args = parser.parse_args()
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
@@ -18,8 +25,8 @@ def main():
 
     # cam_ids = [0, 1]
     # count = len(cam_ids)
-    cam_id_l = 0
-    cam_id_r = 1
+    cam_id_l = args.cam1
+    cam_id_r = args.cam2
 
     # K, d, P, cap = [], [], [], []
     # for i in range(count):

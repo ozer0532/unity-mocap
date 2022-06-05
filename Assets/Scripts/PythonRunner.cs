@@ -8,7 +8,14 @@ using UnityEngine;
 
 public class PythonRunner : MonoBehaviour
 {
+    [Header("Execution Settings")]
     public RunMode Mode;
+    public int FirstCameraIndex;
+    public int SecondCameraIndex;
+
+    [Header("Python Location")]
+    public string PythonPath = @"\venv\Scripts\python.exe";
+    public bool AbsolutePath = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +31,9 @@ public class PythonRunner : MonoBehaviour
 
     private void RunPython() 
     {
-        var fileName = Directory.GetCurrentDirectory() + @"\venv\Scripts\python.exe";
-
-        var psi = new ProcessStartInfo();
-        // point to python virtual env
-        psi.FileName = Directory.GetCurrentDirectory();
-        psi.FileName += @"\venv\Scripts\python.exe";
+        string fileName;
+        if (!AbsolutePath) fileName = Directory.GetCurrentDirectory() + PythonPath;
+        else fileName = PythonPath;
 
         // Provide arguments
         string script;
@@ -49,7 +53,8 @@ public class PythonRunner : MonoBehaviour
         }
 
         string strCmdText;
-        strCmdText= string.Format("{0} ", script);
+        strCmdText= string.Format("{0} -a {1} -b {2}", script, FirstCameraIndex, SecondCameraIndex);
+        print($"Running {fileName} {strCmdText}");
         System.Diagnostics.Process.Start(fileName, strCmdText);
     }
 
