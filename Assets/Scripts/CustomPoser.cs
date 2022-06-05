@@ -11,6 +11,13 @@ public class CustomPoser : MonoBehaviour
     public Vector3 RotationalOffset;
     public Vector3 TargetDirection;
 
+    [Header("Threshold")]
+    public float StartThreshold;
+    public float EndThreshold;
+
+    private bool _moving;
+    private Vector3 _prevDir = Vector3.right;
+
     public void HandlePose(float[,] poseKeypoints) {
         var rotation = FindRotationByOffset(poseKeypoints);
         SetRotation(rotation);
@@ -25,6 +32,16 @@ public class CustomPoser : MonoBehaviour
         var tarPos = TargetKeypoint.GetKeypointValue(keypoints);
         var deltaPos = tarPos - currPos;
         var targetDir = TargetDirection;
+        
+        var threshold = _moving ? EndThreshold : StartThreshold;
+        if (Vector3.Angle(_prevDir, targetDir) < threshold) {
+            targetDir = _prevDir;
+            _moving = false;
+        }
+        else {
+            _prevDir = targetDir;
+            _moving = true;
+        }
 
         Transform parentJoint = Joint.parent;
         if (parentJoint) {

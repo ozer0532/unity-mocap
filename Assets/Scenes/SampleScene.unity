@@ -351,166 +351,232 @@ MonoBehaviour:
     Joint: {fileID: 407214136}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 01 left_eye_inner
     TargetIndex: -1
     Joint: {fileID: 1513956411}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 02 left_eye
     TargetIndex: -1
     Joint: {fileID: 1155831729}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 03 left_eye_outer
     TargetIndex: -1
     Joint: {fileID: 562506559}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 04 right_eye_inner
     TargetIndex: -1
     Joint: {fileID: 301902001}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 05 right_eye
     TargetIndex: -1
     Joint: {fileID: 1592308953}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 06 right_eye_outer
     TargetIndex: -1
     Joint: {fileID: 856511398}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 07 left_ear
     TargetIndex: -1
     Joint: {fileID: 1207451628}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 08 right_ear
     TargetIndex: -1
     Joint: {fileID: 41223943}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 09 mouth_left
     TargetIndex: -1
     Joint: {fileID: 384567726}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 10 mouth_right
     TargetIndex: -1
     Joint: {fileID: 1109186200}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 11 right_shoulder
     TargetIndex: 13
     Joint: {fileID: 359776010}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 12 left_shoulder
     TargetIndex: 14
     Joint: {fileID: 359776011}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: -1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 13 right_elbow
     TargetIndex: 15
     Joint: {fileID: 359776008}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 14 left_elbow
     TargetIndex: 16
     Joint: {fileID: 359776009}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: -1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 15 right_wrist
     TargetIndex: 19
     Joint: {fileID: 359776006}
     RotationalOffset: {x: 180, y: 180, z: 180}
     TargetDirection: {x: 1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 16 left_wrist
     TargetIndex: 20
     Joint: {fileID: 359776007}
     RotationalOffset: {x: 180, y: 180, z: 180}
     TargetDirection: {x: -1, y: 0, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 17 left_pinky
     TargetIndex: -1
     Joint: {fileID: 2090299416}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 18 right_pinky
     TargetIndex: -1
     Joint: {fileID: 1313642343}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 19 left_index
     TargetIndex: -1
     Joint: {fileID: 927779599}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 20 right_index
     TargetIndex: -1
     Joint: {fileID: 880059364}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 21 left_thumb
     TargetIndex: -1
     Joint: {fileID: 1373486367}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 22 right_thumb
     TargetIndex: -1
     Joint: {fileID: 398200940}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 23 right_hip
     TargetIndex: 25
     Joint: {fileID: 359775998}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: -1, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 24 left_hip
     TargetIndex: 26
     Joint: {fileID: 359775999}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: -1, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 25 right_knee
     TargetIndex: 27
     Joint: {fileID: 359775996}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: -1, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 26 left_knee
     TargetIndex: 28
     Joint: {fileID: 359775997}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: -1, z: 0}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 27 right_ankle
     TargetIndex: 31
     Joint: {fileID: 359775994}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 1}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 28 left_ankle
     TargetIndex: 32
     Joint: {fileID: 359775995}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 1}
+    StartThreshold: 10
+    EndThreshold: 2
   - Name: 29 left_heel
     TargetIndex: -1
     Joint: {fileID: 534635050}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 30 right_heel
     TargetIndex: -1
     Joint: {fileID: 128556526}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 31 right_foot_index
     TargetIndex: -1
     Joint: {fileID: 359775992}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 32 left_foot_index
     TargetIndex: -1
     Joint: {fileID: 359775993}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   Parser: {fileID: 11400000, guid: b067d0e820b5d3a4e9576da526fbaeea, type: 2}
   _debug: 1
 --- !u!4 &359775992 stripped
@@ -600,7 +666,11 @@ MonoBehaviour:
   NoseKeypoint: {fileID: 11400000, guid: 0de0df797f96f3044bf742f1743a5406, type: 2}
   EyesKeypoint: {fileID: 11400000, guid: f14fb0a0eec4419439aa91cd6c0bb6f0, type: 2}
   Joint: {fileID: 1249128646}
-  RotationalOffset: {x: 25, y: 180, z: 0}
+  RotationalOffset: {x: 25, y: 180, z: 10}
+  TiltStartThreshold: 5
+  YawStartThreshold: 5
+  TiltEndThreshold: 1
+  YawEndThreshold: 1
   _debug: 0
 --- !u!114 &369417673
 MonoBehaviour:
@@ -619,6 +689,8 @@ MonoBehaviour:
   RightHip: {fileID: 11400000, guid: 2b132c8f63885d94bae73dbdb2c3c54a, type: 2}
   Joint: {fileID: 1231355424}
   RotationalOffset: {x: 0, y: 0, z: 0}
+  StartThreshold: 5
+  EndThreshold: 1
 --- !u!114 &369417675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +709,8 @@ MonoBehaviour:
   Joint: {fileID: 1541654536}
   RotationalOffset: {x: 0, y: 0, z: 0}
   TargetDirection: {x: 0, y: 1, z: 0}
+  StartThreshold: 5
+  EndThreshold: 1
 --- !u!114 &369417676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,166 +1394,232 @@ MonoBehaviour:
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 01 left_eye_inner
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 02 left_eye
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 03 left_eye_outer
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 04 right_eye_inner
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 05 right_eye
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 06 right_eye_outer
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 07 left_ear
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 08 right_ear
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 09 mouth_left
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 10 mouth_right
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 11 right_shoulder
     TargetIndex: 13
     Joint: {fileID: 545982091}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 12 left_shoulder
     TargetIndex: 14
     Joint: {fileID: 545982090}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 13 right_elbow
     TargetIndex: 15
     Joint: {fileID: 545982089}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 14 left_elbow
     TargetIndex: 16
     Joint: {fileID: 545982088}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 15 right_wrist
     TargetIndex: 19
     Joint: {fileID: 545982087}
     RotationalOffset: {x: 180, y: 180, z: 180}
     TargetDirection: {x: -1, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 16 left_wrist
     TargetIndex: 20
     Joint: {fileID: 545982086}
     RotationalOffset: {x: 180, y: 180, z: 180}
     TargetDirection: {x: 1, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 17 left_pinky
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 18 right_pinky
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 19 left_index
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 20 right_index
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 21 left_thumb
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 22 right_thumb
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 23 right_hip
     TargetIndex: 25
     Joint: {fileID: 84480843}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 24 left_hip
     TargetIndex: 26
     Joint: {fileID: 580202714}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 25 right_knee
     TargetIndex: 27
     Joint: {fileID: 772240658}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 26 left_knee
     TargetIndex: 28
     Joint: {fileID: 2032376760}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 1, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 27 right_ankle
     TargetIndex: 31
     Joint: {fileID: 1533141737}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 1}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 28 left_ankle
     TargetIndex: 32
     Joint: {fileID: 880626994}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 1}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 29 left_heel
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 30 right_heel
     TargetIndex: -1
     Joint: {fileID: 0}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 31 right_foot_index
     TargetIndex: -1
     Joint: {fileID: 359775992}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   - Name: 32 left_foot_index
     TargetIndex: -1
     Joint: {fileID: 359775993}
     RotationalOffset: {x: 0, y: 0, z: 0}
     TargetDirection: {x: 0, y: 0, z: 0}
+    StartThreshold: 0
+    EndThreshold: 0
   Parser: {fileID: 11400000, guid: b067d0e820b5d3a4e9576da526fbaeea, type: 2}
   _debug: 1
 --- !u!114 &1782086667
@@ -1500,6 +1640,8 @@ MonoBehaviour:
   Joint: {fileID: 1700710876}
   RotationalOffset: {x: 0, y: 0, z: 0}
   TargetDirection: {x: 0, y: 1, z: 0}
+  StartThreshold: 0
+  EndThreshold: 0
 --- !u!114 &1782086668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,6 +1659,8 @@ MonoBehaviour:
   RightHip: {fileID: 11400000, guid: 2b132c8f63885d94bae73dbdb2c3c54a, type: 2}
   Joint: {fileID: 999559006}
   RotationalOffset: {x: 0, y: 0, z: 0}
+  StartThreshold: 0
+  EndThreshold: 0
 --- !u!114 &1782086669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,6 +1679,10 @@ MonoBehaviour:
   EyesKeypoint: {fileID: 11400000, guid: f14fb0a0eec4419439aa91cd6c0bb6f0, type: 2}
   Joint: {fileID: 721506939}
   RotationalOffset: {x: 25, y: 180, z: 0}
+  TiltStartThreshold: 0
+  YawStartThreshold: 0
+  TiltEndThreshold: 0
+  YawEndThreshold: 0
   _debug: 1
 --- !u!1001 &1807094029
 PrefabInstance:

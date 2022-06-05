@@ -11,9 +11,19 @@ public class HeadPoser : MonoBehaviour
     public Transform Joint;
     public Vector3 RotationalOffset;
 
+    [Header("Threshold")]
+    public float TiltStartThreshold;
+    public float YawStartThreshold;
+    public float TiltEndThreshold;
+    public float YawEndThreshold;
+
     [SerializeField] private bool _debug;
 
     private float[,] _poseKeypoints;
+    private Vector3 _prevUp = Vector3.up;
+    private Vector3 _prevForward = Vector3.forward;
+    private bool _tilting;
+    private bool _yawing;
 
     public void HandlePose(float[,] poseKeypoints) {
         var rotation = FindRotation(poseKeypoints);
@@ -44,8 +54,28 @@ public class HeadPoser : MonoBehaviour
         var up = eyes - mouth;
         var forward = nose - (mouth + (up * 0.5f));
 
-        var rotation = Quaternion.FromToRotation(parentUp, up);
-        rotation = rotation * Quaternion.FromToRotation(parentForward, forward);
+        if (Vector3.Angle(_prevUp, up) < (_tilting ? TiltEndThreshold : TiltStartThreshold)) {
+            up = _prevUp;
+            _tilting = false;
+        }
+        else {
+            _prevUp = up;
+            _tilting = true;
+        }
+        if (Vector3.Angle(_prevForward, forward) < (_yawing ? YawEndThreshold : YawStartThreshold)) {
+            forward = _prevForward;
+            _yawing = false;
+        }
+        else {
+            _prevForward = forward;
+            _yawing = true;
+        }
+
+        var rotation = Quaternion.identity;
+        var tiltRot = Quaternion.FromToRotation(parentUp, up);
+        var yawRot = Quaternion.FromToRotation(parentForward, forward);
+        rotation *= tiltRot;
+        rotation *= yawRot;
 
         // print(Vector3.Angle(parentUp, up));
 

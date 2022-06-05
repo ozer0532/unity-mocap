@@ -60,12 +60,22 @@ public class Poser : MonoBehaviour
         var deltaPos = tarPos - currPos;
         var targetDir = currMapInfo.TargetDirection;
 
+        var threshold = currMapInfo.Moving ? currMapInfo.EndThreshold : currMapInfo.StartThreshold;
+        if (Vector3.Angle(currMapInfo.PreviousDirection, deltaPos) < threshold) {
+            deltaPos = currMapInfo.PreviousDirection;
+            currMapInfo.Moving = false;
+        }
+        else {
+            currMapInfo.PreviousDirection = deltaPos;
+            currMapInfo.Moving = true;
+        }
+
         Transform parentJoint = currMapInfo.Joint.parent;
         if (parentJoint) {
             deltaPos = parentJoint.InverseTransformDirection(deltaPos);
         }
 
-        var rotation = Quaternion.FromToRotation(currMapInfo.TargetDirection, deltaPos);
+        var rotation = Quaternion.FromToRotation(targetDir, deltaPos);
 
         return rotation;
     }
@@ -137,5 +147,21 @@ public class Poser : MonoBehaviour
         public Transform Joint;
         public Vector3 RotationalOffset;
         public Vector3 TargetDirection;
+
+        [Header("Threshold")]
+        public float StartThreshold;
+        public float EndThreshold;
+
+        private Vector3 _prevDir = Vector3.up;
+        public Vector3 PreviousDirection {
+            get => _prevDir;
+            set => _prevDir = value;
+        }
+
+        private bool _moving;
+        public bool Moving {
+            get => _moving;
+            set => _moving = value;
+        }
     }
 }
