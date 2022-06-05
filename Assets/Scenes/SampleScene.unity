@@ -656,7 +656,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359775990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a6d25d439b59f244ae0eee008f52e27, type: 3}
   m_Name: 
@@ -724,6 +724,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mode: 1
+--- !u!114 &369417678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461916613b0144042addf31211b9a7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Parser: {fileID: 11400000, guid: b067d0e820b5d3a4e9576da526fbaeea, type: 2}
+  MouthKeypoint: {fileID: 11400000, guid: b91e685993c5df04ea75d7f2fb032557, type: 2}
+  EyesKeypoint: {fileID: 11400000, guid: f14fb0a0eec4419439aa91cd6c0bb6f0, type: 2}
+  LeftKeypoint: {fileID: 11400000, guid: c1fdbd42c0bd8eb478d9b039edbf5c8f, type: 2}
+  RightKeypoint: {fileID: 11400000, guid: cf15c62ed57aef3448db511228880f74, type: 2}
+  Joint: {fileID: 1249128646}
+  RotationalOffset: {x: 25, y: 0, z: 10}
+  TiltStartThreshold: 5
+  YawStartThreshold: 5
+  TiltEndThreshold: 1
+  YawEndThreshold: 1
+  _debug: 1
 --- !u!1 &384567725
 GameObject:
   m_ObjectHideFlags: 0
